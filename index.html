@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de Oleksandr Herman Kiyan — desarrollador y creativo digital."
+    />
+    <meta name="author" content="Oleksandr Herman Kiyan" />
+    <meta
+      name="keywords"
+      content="portafolio, desarrollador, diseño web, Oleksandr Herman Kiyan, frontend, proyectos"
+    />
+    <title>Oleksandr Herman Kiyan — Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          href="#inicio"
+          class="logo"
+          aria-label="Inicio — Oleksandr Herman Kiyan"
+          >OHK</a
+        >
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li><a href="#portafolio" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Presentación">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-blob blob-1"></div>
+          <div class="hero-blob blob-2"></div>
+          <div class="noise-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <span class="hero-eyebrow">Bienvenido a mi portafolio</span>
+          <h1 class="hero-name">
+            <span class="name-line">Oleksandr</span>
+            <span class="name-line accent">Herman Kiyan</span>
+          </h1>
+          <p class="hero-tagline">
+            Desarrollo web · Diseño de interfaces · Experiencias digitales
+          </p>
+          <div class="hero-cta">
+            <a href="#portafolio" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <section class="about" id="sobre-mi" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">01 — Sobre mí</div>
+          <div class="about-grid">
+            <div class="about-image-wrap">
+              <img
+                src="IMG/IMG_1800.JPG"
+                alt="Foto de perfil de Oleksandr Herman Kiyan"
+                class="about-photo"
+                loading="lazy"
+              />
+              <div class="about-image-frame" aria-hidden="true"></div>
+            </div>
+            <div class="about-text">
+              <h2 id="about-title" class="section-title">
+                Hola, soy Oleksandr
+              </h2>
+              <p class="about-body">
+                Desarrollador web con pasión por construir interfaces limpias,
+                rápidas y accesibles. Me interesa la intersección entre código y
+                diseño: creo que un buen producto digital debe funcionar
+                perfectamente <em>y</em> verse extraordinario.
+              </p>
+              <p class="about-body">
+                Con experiencia en proyectos de frontend y backend, disfruto
+                resolviendo problemas complejos con soluciones elegantes.
+                Siempre en busca de nuevos retos.
+              </p>
+              <ul class="skills-list" aria-label="Habilidades principales">
+                <li class="skill-tag">HTML &amp; CSS</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">React</li>
+                <li class="skill-tag">Node.js</li>
+                <li class="skill-tag">UI/UX</li>
+                <li class="skill-tag">Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="portfolio"
+        id="portafolio"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="container">
+          <div class="section-label" aria-hidden="true">02 — Proyectos</div>
+          <h2 id="portfolio-title" class="section-title">Trabajo selecto</h2>
+          <div class="projects-grid">
+            <article class="project-card" aria-labelledby="proj1-title">
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80&fit=crop"
+                  alt="Captura del panel de administración de NovaDash"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">React · Node.js</span>
+                <h3 id="proj1-title" class="project-title">NovaDash</h3>
+                <p class="project-desc">
+                  Panel de administración para startups con visualización de
+                  métricas en tiempo real y gestión de usuarios.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj2-title">
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=700&q=80&fit=crop"
+                  alt="Interfaz de la tienda online ArcaModa"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">HTML · CSS · JS</span>
+                <h3 id="proj2-title" class="project-title">ArcaModa</h3>
+                <p class="project-desc">
+                  Tienda online de moda independiente con filtros avanzados,
+                  carrito persistente y diseño mobile-first.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj3-title">
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&q=80&fit=crop"
+                  alt="Aplicación de seguimiento de hábitos HabitFlow"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">React Native</span>
+                <h3 id="proj3-title" class="project-title">HabitFlow</h3>
+                <p class="project-desc">
+                  App móvil de seguimiento de hábitos con estadísticas
+                  semanales, recordatorios inteligentes y modo oscuro.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj4-title">
+              <div class="project-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&q=80&fit=crop"
+                  alt="Plataforma de blog y escritura LexOra"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Next.js · MDX</span>
+                <h3 id="proj4-title" class="project-title">LexOra</h3>
+                <p class="project-desc">
+                  Plataforma de publicación de contenido para escritores
+                  independientes con editor enriquecido y SEO optimizado.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">03 — Contacto</div>
+          <h2 id="contact-title" class="section-title">¿Hablamos?</h2>
+          <p class="contact-intro">
+            ¿Tienes un proyecto en mente o simplemente quieres saludar?
+            Escríbeme.
+          </p>
+          <form
+            class="contact-form"
+            novalidate
+            aria-label="Formulario de contacto"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form-input"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="tu@email.com"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="form-input form-textarea"
+                placeholder="Cuéntame sobre tu proyecto..."
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Pie de página">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2025 Oleksandr Herman Kiyan. Todos los derechos reservados.
+        </p>
+        <ul class="social-links" aria-label="Redes sociales">
+          <li>
+            <a
+              href="https://www.instagram.com/olekherman_?igsh=eWU0bDNkc2lzbm44&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de Oleksandr Herman Kiyan"
+              class="social-link"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/oleksandrhk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Oleksandr Herman Kiyan"
+              class="social-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
