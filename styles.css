@@ -1,8 +1,4 @@
-/* ==============================================
-   styles.css — Portafolio Oleksandr Herman Kiyan
-   ============================================== */
-
-/* ── 0. RESET / NORMALIZE ─────────────────────── */
+/* normalizacion */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -42,7 +38,7 @@ input, textarea, button, select {
   font: inherit;
 }
 
-/* ── 1. CSS VARIABLES ─────────────────────────── */
+/* variables */
 :root {
   /* Colors */
   --clr-bg:        #0a0a0f;
@@ -55,7 +51,7 @@ input, textarea, button, select {
   --clr-accent-2:  #7b61ff;
   --clr-white:     #ffffff;
 
-  /* Typography */
+  /* tipografia */
   --ff-display: 'Syne', sans-serif;
   --ff-body:    'DM Sans', sans-serif;
 
@@ -69,14 +65,13 @@ input, textarea, button, select {
   --fs-3xl:  4.5rem;
   --fs-4xl:  6rem;
 
-  /* Spacing */
+  /* spacing */
   --sp-xs:   0.5rem;
   --sp-sm:   1rem;
   --sp-md:   2rem;
   --sp-lg:   4rem;
   --sp-xl:   8rem;
 
-  /* Misc */
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
@@ -85,7 +80,7 @@ input, textarea, button, select {
   --header-h: 72px;
 }
 
-/* ── 2. BASE ──────────────────────────────────── */
+/* base */
 body {
   background-color: var(--clr-bg);
   color: var(--clr-text);
@@ -100,7 +95,7 @@ body {
   padding: 0 var(--sp-md);
 }
 
-/* ── 3. HEADER ────────────────────────────────── */
+/* header */
 .site-header {
   position: fixed;
   top: 0;
@@ -135,7 +130,7 @@ body {
 
 .logo:hover { opacity: 0.75; }
 
-/* Navegación */
+/* navegación */
 .main-nav {
   display: flex;
   align-items: center;
@@ -173,7 +168,7 @@ body {
 .nav-link:hover { color: var(--clr-white); }
 .nav-link:hover::after { width: 100%; }
 
-/* ── 4. HERO ──────────────────────────────────── */
+/*hero */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -184,7 +179,7 @@ body {
   padding-top: var(--header-h);
 }
 
-/* Fondo animado */
+/* fondo animado */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -292,7 +287,7 @@ body {
   animation: fadeUp 0.9s 0.5s ease both;
 }
 
-/* Botones */
+/* botones */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -329,7 +324,7 @@ body {
   border-color: rgba(255,255,255,0.2);
 }
 
-/* Scroll hint */
+/* scroll */
 .hero-scroll-hint {
   position: absolute;
   bottom: var(--sp-md);
@@ -363,7 +358,7 @@ body {
   50%       { opacity: 1; }
 }
 
-/* ── 5. SECCIONES COMUNES ─────────────────────── */
+/* secciones comunes */
 .about, .portfolio, .contact {
   padding: var(--sp-xl) 0;
 }
@@ -388,7 +383,7 @@ body {
   margin-bottom: var(--sp-md);
 }
 
-/* ── 6. SOBRE MÍ ──────────────────────────────── */
+/* sobre mí */
 .about {
   background: var(--clr-surface);
 }
@@ -464,7 +459,7 @@ body {
   border-color: var(--clr-accent);
 }
 
-/* ── 7. PORTAFOLIO ────────────────────────────── */
+/* portafolio */
 .portfolio { background: var(--clr-bg); }
 
 .projects-grid {
@@ -536,7 +531,7 @@ body {
   line-height: 1.7;
 }
 
-/* ── 8. CONTACTO ──────────────────────────────── */
+/* contacto */
 .contact { background: var(--clr-surface); }
 
 .contact-intro {
@@ -595,7 +590,7 @@ body {
 
 .form-textarea { resize: vertical; min-height: 130px; }
 
-/* ── 9. FOOTER ────────────────────────────────── */
+/* footer */
 .site-footer {
   background: var(--clr-bg);
   border-top: 1px solid var(--clr-border);
@@ -644,7 +639,7 @@ body {
 .social-link:hover { color: var(--clr-white); }
 .social-link:hover::after { width: 100%; }
 
-/* ── 10. RESPONSIVE ───────────────────────────── */
+/* responsive */
 
 /* Tablets (≤ 900px) */
 @media (max-width: 900px) {
@@ -666,14 +661,14 @@ body {
   }
 }
 
-/* Móviles (≤ 640px) */
+/* móviles (≤ 640px) */
 @media (max-width: 640px) {
   :root {
     --sp-xl: 5rem;
     --sp-lg: 3rem;
   }
 
-  /* Header — menú siempre visible, apilado verticalmente */
+  /* header */
   .header-inner {
     flex-direction: column;
     height: auto;
@@ -694,7 +689,7 @@ body {
     padding-top: 120px;
   }
 
-  /* Hero nombre */
+  /* hero nombre */
   .name-line { font-size: clamp(var(--fs-xl), 12vw, var(--fs-2xl)); }
 
   /* Contacto */
@@ -704,7 +699,7 @@ body {
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
 
-/* Pantallas grandes (≥ 1400px) */
+/* pantallas grandes (≥ 1400px) */
 @media (min-width: 1400px) {
   :root { --max-w: 1320px; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
